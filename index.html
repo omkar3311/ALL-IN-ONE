@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALL FOR ONE</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    
+    
+    <div class="container">
+
+
+       <div class="sidebar" id="slidebar">
+          <div id="name">
+            <button id="open" onclick="under()"> < </button>
+            <h2  id="title"  onclick="showsection('home')">ALL CODES</h2>
+        </div>
+          <div class="b1"><a href="#"  class="bar box" onclick="showsection('bsort')">BUBBLE SORT</a></div>
+          <div class="b1"><a href="#"  class="bar box" onclick="showsection('stack')">STACK</a></div>
+          <div class="b1"><a href="#"  class="bar box" onclick="showsection('calculator')">CALCULATOR</a></div>
+          <div class="b1"><a href="#"  class="bar box" onclick="showsection('other')">OTHER..</a></div>
+         <!--   <div class="b1"><a href="#"  class="bar box" onclick="showsection('feed')">FEEDBACK</a></div>  -->
+
+          <div id="foot">
+            <pre> all rights@ are reseved
+
+ fluxcore9975@gmail.com
+            </pre>
+    
+           </div>
+       </div>
+
+
+       
+
+       <div class="main">
+
+
+
+        <section  id="home" class="section active">
+            <div id="logo">
+                <button id="login" onclick="shows('come')">LOGIN</button>
+            </div>
+            <div id="wel">
+                <b id="welcome">WELCOME</b>
+                <p id="name1"></p>
+           
+
+            <div id="data" class="log1" >
+                <form>
+                    <div id="titl">LOGIN</div>
+                    <div id="dat">
+                            <input id="data1" type="text" placeholder="ENTER NAME....">    
+                        <p id="msg"></p>
+                        <div id="dat1">
+                            <button id="sub" onclick="login()">submit</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        </section>
+
+
+
+        <section id="bsort" class="section">
+            <h2 id="b2">BUBBLE SORT</h2>
+            <div id="el">
+                <b >ENTER 5 ELEMENTS:</b>
+               <div class="input">
+                <input type="text" maxlength="1" id="input1" class="in block" >
+                <input type="text" maxlength="1" id="input2" class="in block" >
+                <input type="text" maxlength="1" id="input3" class="in block" >
+                <input type="text" maxlength="1" id="input4" class="in block" >
+                <input type="text" maxlength="1" id="input5" class="in block" >
+               </div>
+            </div>
+            <div id="butt">
+            <button id="butt1" onclick="bubblesort()">sort</button>
+            </div>
+            <div>
+                <b id="sort">SORTED ARRAY IS:</b>
+                <div class="output">
+                    <p id="output1" class="output1"></p>
+                    <p id="output2" class="output1"></p>
+                    <p id="output3" class="output1"></p>
+                    <p id="output4" class="output1"></p>
+                    <p id="output5" class="output1"></p>
+                   </div>
+            </div>
+            <div>
+                <p id="bubble"></p>
+            </div>
+            <div id="algo">
+                Algorithm:</div>
+                <div id="algo1">
+                    for(let i=0;i<5;i++){<br>
+                    for(let j=0;j<5-i;j++){<br>
+                        if(array[j]>array[j+1]){<br>
+                            let t=array[j];<br>
+                            array[j]=array[j+1];<br>
+                            array[j+1]=t;<br>
+                        }
+                    }
+            </div>
+        </section>
+
+
+        <section id="stack" class="section">
+            <h2 id="st">STACK</h2>
+            <div id="stack3">
+                <b id="stack4">CHOOSE :</b>
+                <div id="stack5">
+                    <table>
+                        <tr>
+                            <td>
+                                <input type="text" id="stack7">
+                            </td>
+                            <td><b id="stack6"><button id="stack9" onclick="push()">PUSH</button></b></td>
+                        </tr>
+                    </table>
+                    <b id="stack6"><button id="stack10" onclick="pop()">POP</button> </b>
+                </div>
+                <div id="stack8">
+                    <p class="stack11" id="stack11"></p>
+                    <p class="stack11" id="stack12"></p>
+                    <p class="stack11" id="stack13"></p>
+                    <p class="stack11" id="stack14"></p>
+                    <p class="stack11" id="stack15"></p>
+                    <p id="stack16"></p>
+                </div>
+                
+            </div>
+          <!-- <div id="stack17">
+             <div id="stack19 active">algorithm</div>
+            <pre id="stack19 active">
+ 
+                
+  void push(){                     void pop(){                               void display(){
+      if(top==max-1)//full              if(top==-1)//empty                         if(top==-1)//empty    
+      else{                             else{                                      else{
+          top++;                             element=stack[top];                         for(int i=0;i<= max-1;i++){
+          stack[top]=element;                top--;                                         printf("%d\n",stack[i]);}
+      }                                      }                                          }     
+    }                                      }                                         }
+            </pre>
+           </div> -->
+        </section>
+
+
+
+        <section id="calculator" class="section">
+            <h2 id="cal">CALCULATOR</h2>
+            <div id="cal1">
+                
+            <div id="cal2">
+                <div>
+                    <p id="cal3"></p>
+                </div>
+                <div class="cal4">
+                    <button class="cal5">AC</button>
+                    <button class="cal5">%</button>
+                    <button class="cal5">C</button>
+                    <button class="cal5">/</button>
+                </div>
+                <div class="cal4">
+                    <button class="cal5">7</button>
+                    <button class="cal5">8</button>
+                    <button class="cal5">9</button>
+                    <button class="cal5">*</button>
+                </div>
+                <div class="cal4">
+                    <button class="cal5">4</button>
+                    <button class="cal5">5</button>
+                    <button class="cal5">6</button>
+                    <button class="cal5">-</button>
+                </div>
+                <div class="cal4">
+                    <button class="cal5">1</button>
+                    <button class="cal5">2</button>
+                    <button class="cal5">3</button>
+                    <button class="cal5">+</button>
+                </div>
+                <div class="cal4">
+                    <button class="cal5">00</button>
+                    <button class="cal5">0</button>
+                    <button class="cal5">.</button>
+                    <button class="cal5">=</button>
+                </div>
+            </div>
+                
+            </div>
+        </section>
+
+        <section id="other" class="section">
+
+
+            <h2 id="b2">OTHER</h2>
+            <div id="oth">
+            <div id="other1">
+                <div id="other2">other</div>
+                <div id="other3">
+                    <div class="b1"><a href="#"  class="bar box" onclick="newsection('fact')">factorial</a></div>
+                    <div class="b1"><a href="#"  class="bar box" onclick="newsection('ls')">largesmall</a></div>
+                    <div class="b1"><a href="#"  class="bar box" onclick="newsection('fseries')">fibonace series</a></div>
+                    <div class="b1"><a href="#"  class="bar box" onclick="newsection('ccount')">character count</a></div>
+                </div>
+            </div>
+
+
+            <div class="other4">  
+
+
+                <section id="fact" class="otherr active">
+                    <div id="fact1">
+                        <div id="fact2">FACTORIAL</div>
+                        <div id="fact3">
+                            <b id="fact4">ENTER NUMBER:</b>
+                        </div>
+                        <div id="fact5">
+                        <input type="text" id="fact6">
+                        <button id="fact7" onclick="fact()">factorial</button>   
+                        </div>
+                        <div id="fact8">
+                            <p id="fact9"></p>
+                        </div>
+                    </div>
+                </section>
+
+
+                <section id="ls" class="otherr"> 
+
+                    <div id="fact2"><b>LARGE & SMALL NUMBER</b></div>
+                    <div id="el">
+                        <b >ENTER 5 ELEMENTS:</b>
+                       <div class="input">
+                        <input type="text" maxlength="1" id="li1" class="in block" >
+                        <input type="text" maxlength="1" id="li2" class="in block" >
+                        <input type="text" maxlength="1" id="li3" class="in block" >
+                        <input type="text" maxlength="1" id="li4" class="in block" >
+                        <input type="text" maxlength="1" id="li5" class="in block" >
+                       </div>
+                    </div>
+                    <div id="ls2">
+                    <button id="ls3" onclick="ls()">find</button>
+                    </div>
+                    <div class="ls4">
+                        <p id="ls5"></p>
+                        
+                    </div>
+                    <div class="ls4">
+                        <p id="ls7"></p>
+                    </div>
+
+
+                </section>
+
+
+                <section id="fseries" class="otherr">
+                    <!--<div id="fact1">
+                        <div id="fact2">FIBONACE SERIES</div>
+                        <div id="fact3">
+                            <b id="fact4">ENTER SERIES LENGHT:</b>
+                        </div>
+                        <div id="f4">
+                            <input type="text" id="f1">
+                            <button id="f5" onclick="fseries()">generate</button>
+                        </div>
+                        <div id="f2">
+                            <p id="f3"></p>
+                        </div>-->
+
+
+                        <div class="not">
+                            <p>NOT DONE YET!!</p>
+                        </div>
+                </section>
+
+
+                <section id="ccount" class="otherr">
+                    <!--<div id="fact1">
+                        <div id="fact2">CHARACTER COUNT</div>
+                        <div id="fact3">
+                            <b id="fact4">ENTER TEXT:</b>
+                        </div>
+                        <div id="c1">
+                            <input type="text" maxlength="10" id="c2">
+                            <button id="c3" onclick="count()">count</button>
+                        </div>
+                        <div id="c4">
+                            <div id="c5"><p id="c6">b</p></div>
+                            <div id="c7"><p id="c8">s</p></div>
+                            <div id="c9"><p id="c10">d</p></div>
+                        </div>-->
+
+                        <div class="not">
+                            <p>NOT DONE YET!!</p>
+                        </div>
+                </section>
+
+
+            </div>
+        </div>
+        </section>
+     
+
+        <!--
+        <section id="feed" class="section">
+            <h2 id="feed3">FEEDBACK</h2>
+            <div id="feed1">
+                <div id="feed2">
+                    <input id="feed6" type="text" placeholder="please giv your valuable feedback......">
+                </div>
+                <div id="feed4">
+                    <button id="feed5">submit</button>
+                </div>
+            </div>
+        </section>
+-->
+       </div>
+    </div>
+
+    
+    <script src="index.js"></script>
+    <script src="stack.js"></script>
+</body>
+</html>
